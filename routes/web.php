@@ -19,6 +19,10 @@ Route::get('/config-value', function(){
     return view('config-value');
 });
 
+Route::get('/livewire', function(){
+    return view('livewire');
+});
+
 Route::resource('/users', UserController::class, [
     'index'
 ]);
